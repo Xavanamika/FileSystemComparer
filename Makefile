@@ -1,6 +1,7 @@
 all:
-	gcc main.c -o fscm -s
+	mkdir -p ./bin/release
+	gcc main.c -o ./bin/release/fscm -s
 
 debug:
-	gcc main.c -o fscm -g
-	./1
+	mkdir -p ./bin/debug
+	gcc main.c -o ./bin/debug/fscm -g
