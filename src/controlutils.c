@@ -1,9 +1,17 @@
 #include <stdio.h>
 
 
+int ARG_VERBOSE = 0;
+int ARG_INFO = 0;
+int ARG_TEXT = 0;
+
 
 int readArgv (int argc, char* argv[])
 {
+
+    ARG_VERBOSE = 0;
+    ARG_INFO = 0;
+    ARG_TEXT = 0;
     
     for (int i = 0; i < argc; i++)
     {
@@ -17,15 +25,18 @@ int readArgv (int argc, char* argv[])
             switch(argument) 
                 {
                     case 'v':
-                    printf("Verbose mode activated.\n");
+                    //printf("Verbose mode activated.\n");
+                    ARG_VERBOSE = 1;
                     break;
 
                     case 'i':
-                    printf("Information mode activated.\n");
+                    //printf("Information mode activated.\n");
+                    ARG_INFO = 1;
                     break;
 
                     case 't':
-                    printf("Text mode activated.\n");
+                    //printf("Text mode activated.\n");
+                    ARG_TEXT = 1;
                     break;
 
                     default:
