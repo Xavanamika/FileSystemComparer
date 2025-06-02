@@ -1,5 +1,9 @@
-Learn:
+Add:
 - Adding directory arguments to controlutils
+- How to list files in a directory
+- Recursive mode
+
+Learn:
 - How to compile dependecies (dll and libs)
 - Making it optimized in the way it can be used both on windows and linux. (probably gui required?)
 - Learn using gdb
