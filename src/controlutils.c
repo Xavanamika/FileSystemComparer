@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 
+// ------------> READING ARGUMENTS <--------------------------
+
 int ARG_VERBOSE = 0;
 int ARG_INFO = 0;
 int ARG_TEXT = 0;
@@ -51,3 +53,5 @@ int readArgv (int argc, char* argv[])
     return 0;
 
 }
+
+// <----
